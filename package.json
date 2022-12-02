@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.1"
+  },
+  "name": "test",
+  "description": "",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agrivyuk/cat_site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agrivyuk/cat_site/issues"
+  },
+  "homepage": "https://github.com/agrivyuk/cat_site#readme"
+}
