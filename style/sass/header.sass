@@ -1,28 +1,37 @@
-.header__inner
-  display: flex
-  justify-content: space-between
-  align-items: center
-  padding: 1rem 0
-  @media (max-width:64rem)
+.header
+  background-color: #CFFDE1
+  &_hidden
+    z-index: 999
+    position: fixed
+    width: 100%
+    transform: translateY(-100%)
+    transition: transform .75s
+  &_show
+    transform: translateY(0)
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1rem 0
+  &__logo
+    user-select: none
+    cursor: pointer
+    img
+      height: 5rem
+  &__nav
+    li
+      display: inline
+    li+li
+      margin-left: 4rem
+    a
+      font-size: 1.25rem
+      transition: color .2s
+    a:hover
+        color: #68B984
+    
+
+@media (max-width:64rem)
+  .header__inner
     justify-content: space-around
-
-.header__logo
-  user-select: none
-  cursor: pointer
-  img
-    height: 5rem
-  @media (max-width:64rem)
-    height: 3rem
-
-.header__nav
-  li
-    display: inline
-  li+li
-    margin-left: 4rem
-  a
-    font-size: 1.25rem
-    transition: color .2s
-  a:hover
-      color: #68B984
-  @media (max-width:64rem)
+  .header__nav
     display: none
