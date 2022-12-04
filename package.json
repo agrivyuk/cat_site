@@ -5,6 +5,7 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-async-tasks": "^1.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.56.1"
   },
