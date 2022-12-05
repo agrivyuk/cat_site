@@ -1,5 +1,6 @@
+@use 'colors'
 .company-description
-  background-color: #CFFDE1
+  background-color: colors.$main
   &__inner
     max-width: 75%
   &__title
@@ -15,7 +16,8 @@
     padding: 1rem 1.1rem
     margin-top: 2.5rem
     border-radius: .75rem
-    background-color: #3D5656
+    background-color: colors.$action
     transition: background-color .2s
+    max-width: 12rem
   input:hover
-    background-color: #68B984
+    background-color: colors.$action-mouseover

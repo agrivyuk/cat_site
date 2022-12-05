@@ -1,5 +1,6 @@
+@use 'colors'
 .header
-  background-color: #CFFDE1
+  background-color: colors.$main
   &_hidden
     z-index: 999
     position: fixed
@@ -27,7 +28,7 @@
       font-size: 1.25rem
       transition: color .2s
     a:hover
-        color: #68B984
+        color: colors.$action-mouseover
     
 
 @media (max-width: 64rem)
