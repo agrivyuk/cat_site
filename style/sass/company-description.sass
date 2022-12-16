@@ -1,6 +1,9 @@
 @use 'colors'
 .company-description
-  background-color: colors.$main
+  background: colors.$main-background-fade
+  background-size: cover
+  border-radius: 0 0rem 60rem 0rem
+  color: colors.$main-text-light
   &__inner
     max-width: 75%
   &__title
@@ -21,4 +24,4 @@
     transition: background-color .2s
     max-width: 12rem
   input:hover
-    background-color: colors.$action-mouseover
+    background-color: colors.$hover-dark

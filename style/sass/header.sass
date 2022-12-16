@@ -1,6 +1,15 @@
 @use 'colors'
+
+#burger
+  z-index: 999
+  position: fixed
+  font-size: 1.5rem
+  top: 2.2rem
+  right: 2.725rem
+  color: #ffffff
+
 .header
-  background-color: colors.$main
+  color: colors.$main-text-light
   &_hidden
     z-index: 999
     position: fixed
@@ -13,7 +22,7 @@
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 1rem 0
+    padding: 2rem 0
   &__logo
     user-select: none
     cursor: pointer
@@ -28,7 +37,7 @@
       font-size: 1.25rem
       transition: color .2s
     a:hover
-        color: colors.$action-mouseover
+        color: colors.$hover-dark
     
 
 @media (max-width: 64rem)
