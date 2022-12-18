@@ -180,6 +180,49 @@
         </section>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <!-- сделается позже -->
+          <div class="footer__info">
+            
+          </div>
+          <div class="footer__form">
+            <h2>У вас есть идея проекта?</h2>
+            <form action="action_page.php" method="POST">
+              <div>
+                  <label for="fname">Имя</label>
+                  <br>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <br>
+              <div>
+                  <label for="company">Компания</label>
+                  <br>
+                  <input type="text" id="company" name="company" required>
+              </div>
+              <br>
+              <div>
+                  <label for="email">Email</label>
+                  <br>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <br>
+              <div>
+                  <!--Без понятия, будет ли работать запрос с textarea-->
+                  <label for="project-description">Расскажите о своём проекте</label>
+                  <br>
+                  <textarea type="text" id="project-description" name="project-description" required> </textarea>
+              </div>
+              <br>
+              <div>
+                  <input type="submit" id="submit-form" value="Отправить">
+              </div>        
+          </form>
+          </div>
+        </div>
+      </div>
+    </footer>
     <input type="button" id="burger" value="☰" />
   </body>
 </html>
