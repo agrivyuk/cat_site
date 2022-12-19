@@ -1,7 +1,7 @@
 @use 'colors'
 .footer
   background: colors.$main-background-dark //colors.$main-background-fade
-  border-radius: 10rem 10rem 0 0
+  border-radius: 5rem 5rem 0 0
   min-height: 10vh
   &__inner
     display: flex
@@ -11,7 +11,31 @@
     padding: 5rem 0 3rem
   &__info
     flex: 1
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 2rem 0
     min-width: 25rem
+    a
+      color: colors.$main-text-light
+      transition: color .2s
+    a:hover
+      color: colors.$hover-dark
+    &-email, &-phone
+      position: relative
+      font-size: 2rem
+    &-email
+        font-weight: 600
+    &-email:before
+      content: ""
+      position: absolute
+      width: 16rem
+      height: 1px
+      top: 3.25rem
+      background-color: colors.$main-text-light
+    &-links
+      display: flex
+      gap: 1rem 5rem
   &__form
     flex: 1
     min-width: 25rem
@@ -35,20 +59,27 @@
       content: ""
       display: block
       margin-top: 1rem
-  #project-description
-    background-color: transparent
-    padding: 0
-    height: 6rem
-    resize: none
-  #submit-form
-    color: #fff
-    font-size: 1rem
-    padding: 1rem 1.1rem
-    border: none
-    border-radius: .75rem
-    background-color: colors.$action
-    transition: background-color .2s
-    height: auto
-    max-width: 12rem
-  #submit-form:hover
-    background-color: colors.$hover-dark
+#map-container
+  overflow: hidden
+  position: relative;
+  min-width: 25rem
+  width: 100%
+  min-height: 18rem
+  height: 100%
+#project-description
+  background-color: transparent
+  padding: 0
+  height: 6rem
+  resize: none
+#submit-form
+  color: #fff
+  font-size: 1rem
+  padding: 1rem 1.1rem
+  border: none
+  border-radius: .75rem
+  background-color: colors.$action
+  transition: background-color .2s
+  height: auto
+  max-width: 12rem
+#submit-form:hover
+  background-color: colors.$hover-dark
